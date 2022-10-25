@@ -1,3 +1,5 @@
+package examples;
+
 public class Example1 {
 
     private String checkStrValue = null;
