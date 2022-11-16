@@ -22,7 +22,7 @@ public class Example1 {
 
     private static void incorrectAssignmentInIfCondition() {
         boolean value = false;
-        if (value == true) {
+        if (value) {
             i = 3;
         } else {
             i = 4;
