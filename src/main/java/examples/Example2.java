@@ -9,6 +9,5 @@ public class Example2 {
     private void emptySynchronized() {
         synchronized (this) {
             exit(-1);
-        }
     }
 }
