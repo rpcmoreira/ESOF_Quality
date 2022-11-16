@@ -3,25 +3,29 @@ package examples;
 public class Example1 {
 
     private String checkStrValue = null;
+    private String valor = "SomeValue";
+    private int i;
 
     public Example1() {
-        this.checkStrValue = "SomeValue";
+        this.checkStrValue = valor;
+        executeSomeConditions();
+        incorrectAssignmentInIfCondition();
     }
 
     private void executeSomeConditions() {
-        if ("SomeValue".equals(this.checkStrValue)) {
-            // Condition 1
-        } else if ("SomeValue".equals(this.checkStrValue)) {
-            // Condition 2
+        if (valor.equals(this.checkStrValue)) {
+            i = 1;
+        } else if (!valor.equals(this.checkStrValue)) {
+            i = 2;
         }
     }
 
     private static void incorrectAssignmentInIfCondition() {
         boolean value = false;
-        if (value = true) {
-            //do Something
+        if (value == true) {
+            i = 3;
         } else {
-            //else Do Something
+            i = 4;
         }
     }
 }
