@@ -15,7 +15,7 @@ public class Example2 {
 
     private void sleepInSynchronized() throws InterruptedException {
         synchronized (this) {
-            Thread.sleep(2000);
+           wait();
         }
     }
 }
