@@ -2,15 +2,20 @@ package examples;
 
 public class Example2 {
 
+    public static void main(String[] args) {
+        sleepInSynchronized();
+        emptySynchronized();
+    }
+
     private void emptySynchronized() {
         synchronized (this) {
-            // Forgot implementation
+            exit(-1);
         }
     }
 
     private void sleepInSynchronized() throws InterruptedException {
         synchronized (this) {
-            Thread.sleep(5000);
+           wait();
         }
     }
 }
